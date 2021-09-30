@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <title> UPLOADING IMAGE</title>
+<head>
+    <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Result</title>
+      <link rel="stylesheet" href="{{url_for('static', filename='assets/bootstrap4/css/bootstrap.min.css')}}">
+</head>
+<body style="border: 2px solid;margin:10px;background:beige">
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-3 col-sm-2">
+          <p><br></p>  
+           <p style="border: 5px solid rgb(255, 0, 0);text-align:center;color:brown"><strong>WORKING TEAM:</strong>
+            <img src="static/uploads/janvier77.jpg" alt="USER IMAGE" height="140px" width="145px"><br>
+            <strong>Eng Janvier<br> <marquee width="100%" direction="left" height="100%">TEL: +250788973044</marquee></strong>   
+            <img src="static/uploads/teddy.jpg" alt="USER IMAGE" height="230px" width="145px"><br>
+            <strong>Teddy<br><marquee width="100%" direction="left" height="100%">TEL: +250785448897</marquee></strong>
+           </p>
+        </div>
+        <div class="col-6 col-sm-8">
+            <p style="border: 2px solid;text-align:center;margin:10px;color:blue"><strong><marquee width="100%" direction="left" height="100%">MAIZE PREDICTION SYSTEM DASHBOARD.</marquee>
+                </strong><br></p>
+            <p style="text-align: center; border: 5px solid #155;background:darkgray;"><br>
+                <img src="{{uploaded_image}}" alt="USER IMAGE" height="450px" width="600px">
+            </p>
+            
+        </div>
+        <div class="col-3 col-sm-2">
+            <h6><br><br><br><br><br><br><br><br>Prediction:</h6>
+            <p style="border: 1px solid;color:rgb(255, 0, 0)"><strong>{{value}} </strong></p>
+            <h6><br><br><br><br><br><br><br><br>Prediction Accuracy:</h6>
+            <p style="border: 1px solid;color:rgb(255, 0, 0)"><strong>{{Accuracy}} </strong>%</p>
+        </div>
+        </div>
+          </div>
+
+</body>
+</html>
